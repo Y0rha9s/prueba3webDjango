@@ -1,0 +1,20 @@
+{% extends "base.html" %}{% load static %}
+{% block title %}Contactanos{% endblock title %}
+{% block content %}
+<div class="contenedor">
+    <form action="" class="form">
+    <div class="form-header">
+        <h1 class="form-title"> <span>INGRESA TUS DATOS Y TE LLAMAREMOS</span></h1>
+    </div>
+    <label for="nombre" class="form-label">Nombres:</label>
+    <input type="text" id="nombre" class="form-input" placeholder="">
+    <label for="apellidos" class="form-label">Apellidos:</label>
+    <input type="text" id="apellidos" class="form-input" placeholder="">
+    <label for="telefono" class="form-label">Telefono:</label>
+    <input type="text" id="telefono" class="form-input" placeholder="">
+
+        </textarea>
+    <center><input type="submit" class="btn-submit" value="Enviar"></center>
+    </form>
+</div>
+{% endblock content %}

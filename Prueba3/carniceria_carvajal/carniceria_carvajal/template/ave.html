@@ -1,0 +1,64 @@
+{% extends "base.html" %}{% load static %}
+{% block title %}Ave{% endblock title %}
+{% block content %}
+<section class="contenedor">
+    <!-- Contenedor de elementos -->
+    <div class="contenedor-items">
+        <div class="item">
+            <span class="titulo-item">Truto Largo</span>
+            <img src="{% static 'IMG/Ave/Truto Largo  2990.png' %}" alt="" class="img-item">
+            <span class="precio-item">$2.840</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Truto Entero</span>
+            <img src="{% static 'IMG/Ave/Trutro Entero.png' %}" alt="" class="img-item">
+            <span class="precio-item">$2.399</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Filete</span>
+            <img src="{% static 'IMG/Ave/Filete de Pollo.png' %}" alt="" class="img-item">
+            <span class="precio-item">$3.990</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Alas</span>
+            <img src="{% static 'IMG/Ave/Alas de Pollo 2.png' %}" alt="" class="img-item">
+            <span class="precio-item">$3.490</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Pechuga Entera</span>
+            <img src="{% static 'IMG/Ave/Pechuga Entera con Hueso.png' %}" alt="" class="img-item">
+            <span class="precio-item">$1.790</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Pollo Entero</span>
+            <img src="{% static 'IMG/Ave/Pollo Entero 2.png' %}" alt="" class="img-item">
+            <span class="precio-item">$6.780</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+    </div>
+    <!-- Carrito de Compras -->
+    <div class="carrito" id="carrito">
+        <div class="header-carrito">
+            <h2>Tu Carrito</h2>
+        </div>
+
+        <div class="carrito-items">
+            
+        </div>
+        <div class="carrito-total">
+            <div class="fila">
+                <strong>Tu Total</strong>
+                <span class="carrito-precio-total">
+                    $120.000,00
+                </span>
+            </div>
+            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+        </div>
+    </div>
+</section>
+{% endblock content %}

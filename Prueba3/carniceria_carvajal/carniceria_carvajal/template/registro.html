@@ -1,0 +1,55 @@
+{% extends "base.html" %}{% load static %}
+{% block title %}REGISTRO{% endblock title %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>REGISTRO</title>
+        
+    </head>
+    <body>
+        {% if message_error %}
+        <div class="alert alert-danger my-4">
+            {{message_error}}
+        </div>
+        {% endif %}
+        <div class="container-sm">
+          <form action="/registro/save" method="POST"> {% csrf_token %}
+                <div class="mb-3 row">
+                    <label for="usuario" class="col-sm-2 col-form-label">USUARIO</label>
+                    <div class="col-sm-10">
+                      <input type="username" class="form-control plaintext" id="txt-usuario" name="usuario" value="" placeholder="USUARIO">
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="contrasena" class="col-sm-2 col-form-label">CONTRASEÑA</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control plaintext" id="txt-contrasena" name="contrasena" value="" placeholder="contrasena">
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="correo" class="col-sm-2 col-form-label">CORREO</label>
+                    <div class="col-sm-10">
+                      <input type="correo" class="form-control plaintext" id="txt-correo" name="correo" value="" placeholder="correo">
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="telefono" class="col-sm-2 col-form-label">TELEFONO</label>
+                    <div class="col-sm-10">
+                      <input type="telefono" class="form-control plaintext" id="txt-telefono" name="telefono" value="" placeholder="telefono">
+                    </div>
+                  </div>
+                  <div class="mb-3 row">
+                    <label for="direccion" class="col-sm-2 col-form-label">DIRECCION</label>
+                    <div class="col-sm-10">
+                      <input type="direccion" class="form-control plaintext" id="txt-direccion" name="direccion" value="" placeholder="direccion">
+                    </div>
+                  </div>
+                    <center><button class="btn btn-primary" type="submit">REGISTRARSE</button></center>
+            </form>
+        </div>
+    </body>
+    </html>
+{% endblock content %}

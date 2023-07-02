@@ -1,0 +1,63 @@
+{% extends "base.html" %}{% load static %}
+{% block title %}Cerdo{% endblock title %}
+{% block content %}
+<section class="contenedor">
+    <!-- Contenedor de elementos -->
+    <div class="contenedor-items">
+        <div class="item">
+            <span class="titulo-item">paletaCerdo</span>
+            <img src="{% static 'IMG/Cerdo/paletaCerdo.png' %}" alt="" class="img-item">
+            <span class="precio-item">$8.590</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Costillar</span>
+            <img src="{% static 'IMG/Cerdo/costillacerdo.png' %}" alt="" class="img-item">
+            <span class="precio-item">$6.990</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Panceta</span>
+            <img src="{% static 'IMG/Cerdo/panceta_cerdo,png.jpg' %}" alt="" class="img-item">
+            <span class="precio-item">$4.190</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Lomo Cerdo</span>
+            <img src="{% static 'IMG/Cerdo/Lomo-de-Cerdo.png' %}" alt="" class="img-item">
+            <span class="precio-item">$6.290</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Pluma</span>
+            <img src="{% static 'IMG/Cerdo/pluma cerdo.png' %}" alt="" class="img-item">
+            <span class="precio-item">$5.990</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Chuleta</span>
+            <img src="{% static 'IMG/Cerdo/Chuleta.png' %}" alt="" class="img-item">
+            <span class="precio-item">$3.590</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+    </div>
+    <!-- Carrito de Compras -->
+    <div class="carrito" id="carrito">
+        <div class="header-carrito">
+            <h2>Tu Carrito</h2>
+        </div>
+
+        <div class="carrito-items">
+        </div>
+        <div class="carrito-total">
+            <div class="fila">
+                <strong>Tu Total</strong>
+                <span class="carrito-precio-total">
+                    $120.000,00
+                </span>
+            </div>
+            <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+        </div>
+    </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}{% load static %}
+{% block title  %}REGISTRO{% endblock title %}
+{% block content %}
+    {% if message %}
+        <div class="alert alert-success mt-2">
+            {{message}}
+        </div>
+        <p>usuario: {{datos.usuario}}</p>
+        <p>contraseña: {{datos.contrasena}}</p>
+        <p>correo:{{datos.correo}}</p>
+        <p>telefono: {{datos.telefono}}</p>
+        <p>direccion: {{datos.direccion}}</p>
+    {% endif %}
+    {% if message_error %}
+        <div class="alert alert-danger mt-2">
+            {{message_error}}
+        </div>
+    {% endif %}
+{% endblock content %}
